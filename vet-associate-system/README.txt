@@ -1,6 +1,9 @@
-1. This is a maven project.
-2. Make sure the device is installed with MySQL.
-3. Run the script below before starts the project.
+This is only a final year project for degree level. The project implements spring boot framework to work with MySQL.
+It is integrated with email validation, simple chatbot (without AIML), and a conversation platform (with http polling).
+
+Important note to test the project:
+1. Email validation is not available (the email information had been removed).
+2. Please run the srcipt below to create the data table for Spring Session.
 
 CREATE DATABASE vass;
 USE vass;
@@ -30,7 +33,7 @@ CREATE TABLE SPRING_SESSION_ATTRIBUTES
     CONSTRAINT SPRING_SESSION_ATTRIBUTES_FK FOREIGN KEY (SESSION_PRIMARY_ID) REFERENCES SPRING_SESSION (PRIMARY_ID) ON DELETE CASCADE
 ) ENGINE=InnoDB ROW_FORMAT=DYNAMIC;
 
-4. There are some accounts that could be directly login for testing without register:
+3. There are some data inserted for demonstartion, the accounts available are as below:
 i. Admin:
 	id: Admin: 1
 	password: 12345678
